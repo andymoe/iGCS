@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1888DE56170F79A700ADA039 /* KxAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888DE4D170F79A700ADA039 /* KxAudioManager.m */; };
-		1888DE57170F79A700ADA039 /* kxmovie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1888DE4F170F79A700ADA039 /* kxmovie.bundle */; };
 		1888DE58170F79A700ADA039 /* KxMovieDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888DE51170F79A700ADA039 /* KxMovieDecoder.m */; };
 		1888DE59170F79A700ADA039 /* KxMovieGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888DE53170F79A700ADA039 /* KxMovieGLView.m */; };
 		1888DE5A170F79A700ADA039 /* KxMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888DE55170F79A700ADA039 /* KxMovieViewController.m */; };
@@ -18,6 +17,11 @@
 		1888DE64170F7B0000ADA039 /* libkxmovie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1888DE5E170F7B0000ADA039 /* libkxmovie.a */; };
 		1888DE65170F7B0000ADA039 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1888DE5F170F7B0000ADA039 /* libswresample.a */; };
 		1888DE66170F7B0000ADA039 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1888DE60170F7B0000ADA039 /* libswscale.a */; };
+		1888DE68170F7D1800ADA039 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1888DE67170F7D1800ADA039 /* MediaPlayer.framework */; };
+		1888DE6A170F7D1F00ADA039 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1888DE69170F7D1F00ADA039 /* CoreAudio.framework */; };
+		1888DE6C170F7D2800ADA039 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1888DE6B170F7D2800ADA039 /* AudioToolbox.framework */; };
+		1888DE6E170F7D3400ADA039 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1888DE6D170F7D3400ADA039 /* Accelerate.framework */; };
+		1888DE70170F803500ADA039 /* kxmovie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1888DE6F170F803500ADA039 /* kxmovie.bundle */; };
 		492C812C16DBCCE9004001FF /* BTLEMavLinkCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 492C812716DBCCE9004001FF /* BTLEMavLinkCentral.m */; };
 		492C812D16DBCCE9004001FF /* BTLEMavLinkCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 492C812716DBCCE9004001FF /* BTLEMavLinkCentral.m */; };
 		492C812E16DBCCE9004001FF /* BTLEMavLinkPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 492C812916DBCCE9004001FF /* BTLEMavLinkPeripheral.m */; };
@@ -150,7 +154,6 @@
 /* Begin PBXFileReference section */
 		1888DE4C170F79A700ADA039 /* KxAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxAudioManager.h; sourceTree = "<group>"; };
 		1888DE4D170F79A700ADA039 /* KxAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxAudioManager.m; sourceTree = "<group>"; };
-		1888DE4F170F79A700ADA039 /* kxmovie.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = kxmovie.bundle; sourceTree = "<group>"; };
 		1888DE50170F79A700ADA039 /* KxMovieDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieDecoder.h; sourceTree = "<group>"; };
 		1888DE51170F79A700ADA039 /* KxMovieDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMovieDecoder.m; sourceTree = "<group>"; };
 		1888DE52170F79A700ADA039 /* KxMovieGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieGLView.h; sourceTree = "<group>"; };
@@ -163,6 +166,11 @@
 		1888DE5E170F7B0000ADA039 /* libkxmovie.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libkxmovie.a; sourceTree = "<group>"; };
 		1888DE5F170F7B0000ADA039 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		1888DE60170F7B0000ADA039 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		1888DE67170F7D1800ADA039 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1888DE69170F7D1F00ADA039 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1888DE6B170F7D2800ADA039 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1888DE6D170F7D3400ADA039 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1888DE6F170F803500ADA039 /* kxmovie.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = kxmovie.bundle; sourceTree = "<group>"; };
 		492C812616DBCCE9004001FF /* BTLEMavLinkCentral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEMavLinkCentral.h; sourceTree = "<group>"; };
 		492C812716DBCCE9004001FF /* BTLEMavLinkCentral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLEMavLinkCentral.m; sourceTree = "<group>"; };
 		492C812816DBCCE9004001FF /* BTLEMavLinkPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEMavLinkPeripheral.h; sourceTree = "<group>"; };
@@ -687,6 +695,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1888DE6E170F7D3400ADA039 /* Accelerate.framework in Frameworks */,
+				1888DE6C170F7D2800ADA039 /* AudioToolbox.framework in Frameworks */,
+				1888DE6A170F7D1F00ADA039 /* CoreAudio.framework in Frameworks */,
+				1888DE68170F7D1800ADA039 /* MediaPlayer.framework in Frameworks */,
 				49C45CB4170A7832007C9999 /* libxml2.2.dylib in Frameworks */,
 				49C45CB2170A7820007C9999 /* MobileCoreServices.framework in Frameworks */,
 				49C45CB0170A7810007C9999 /* CFNetwork.framework in Frameworks */,
@@ -749,6 +761,7 @@
 			isa = PBXGroup;
 			children = (
 				1888DE5B170F7AFF00ADA039 /* libavcodec.a */,
+				1888DE6F170F803500ADA039 /* kxmovie.bundle */,
 				1888DE5C170F7B0000ADA039 /* libavformat.a */,
 				1888DE5D170F7B0000ADA039 /* libavutil.a */,
 				1888DE5E170F7B0000ADA039 /* libkxmovie.a */,
@@ -756,7 +769,6 @@
 				1888DE60170F7B0000ADA039 /* libswscale.a */,
 				1888DE4C170F79A700ADA039 /* KxAudioManager.h */,
 				1888DE4D170F79A700ADA039 /* KxAudioManager.m */,
-				1888DE4F170F79A700ADA039 /* kxmovie.bundle */,
 				1888DE50170F79A700ADA039 /* KxMovieDecoder.h */,
 				1888DE51170F79A700ADA039 /* KxMovieDecoder.m */,
 				1888DE52170F79A700ADA039 /* KxMovieGLView.h */,
@@ -1404,6 +1416,10 @@
 		CA499F6114DE33BC00FCC9FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1888DE6D170F7D3400ADA039 /* Accelerate.framework */,
+				1888DE6B170F7D2800ADA039 /* AudioToolbox.framework */,
+				1888DE69170F7D1F00ADA039 /* CoreAudio.framework */,
+				1888DE67170F7D1800ADA039 /* MediaPlayer.framework */,
 				CAB48D3B170D3D040013D035 /* OpenGLES.framework */,
 				CAB48D39170D3B520013D035 /* GLKit.framework */,
 				49C45CB1170A7820007C9999 /* MobileCoreServices.framework */,
@@ -1665,7 +1681,7 @@
 				49C1FA0E16DC654100BAE96B /* wrench.png in Resources */,
 				495253F51703F3E5006E27B0 /* 111-user.png in Resources */,
 				495253F61703F3E5006E27B0 /* 181-hammer.png in Resources */,
-				1888DE57170F79A700ADA039 /* kxmovie.bundle in Resources */,
+				1888DE70170F803500ADA039 /* kxmovie.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
