@@ -142,6 +142,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1888DE80170F954C00ADA039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1888DE7B170F954B00ADA039 /* kxmovie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 87E793F816390F6D000A0848;
+			remoteInfo = KxMovieExample;
+		};
+		1888DE82170F954C00ADA039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1888DE7B170F954B00ADA039 /* kxmovie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 87FD6175163A75440090956E;
+			remoteInfo = kxmovie;
+		};
 		CA499F8F14DE33BC00FCC9FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CA499F5514DE33BC00FCC9FB /* Project object */;
@@ -171,6 +185,7 @@
 		1888DE6B170F7D2800ADA039 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1888DE6D170F7D3400ADA039 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		1888DE6F170F803500ADA039 /* kxmovie.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = kxmovie.bundle; sourceTree = "<group>"; };
+		1888DE7B170F954B00ADA039 /* kxmovie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = kxmovie.xcodeproj; path = submodules/kxmovie/kxmovie.xcodeproj; sourceTree = "<group>"; };
 		492C812616DBCCE9004001FF /* BTLEMavLinkCentral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEMavLinkCentral.h; sourceTree = "<group>"; };
 		492C812716DBCCE9004001FF /* BTLEMavLinkCentral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLEMavLinkCentral.m; sourceTree = "<group>"; };
 		492C812816DBCCE9004001FF /* BTLEMavLinkPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEMavLinkPeripheral.h; sourceTree = "<group>"; };
@@ -777,6 +792,15 @@
 				1888DE55170F79A700ADA039 /* KxMovieViewController.m */,
 			);
 			path = kxmovie;
+			sourceTree = "<group>";
+		};
+		1888DE7C170F954B00ADA039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1888DE81170F954C00ADA039 /* KxMovieExample.app */,
+				1888DE83170F954C00ADA039 /* libkxmovie.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		492C812516DBCCE9004001FF /* BTLE */ = {
@@ -1392,6 +1416,7 @@
 		CA499F5314DE33BC00FCC9FB = {
 			isa = PBXGroup;
 			children = (
+				1888DE7B170F954B00ADA039 /* kxmovie.xcodeproj */,
 				CAF0B8381657A8960033B0BC /* CorePlotHeaders */,
 				CA20FD24164E4754005187A8 /* mavlink-include */,
 				CA43DE0815143E570014F7C8 /* glyphish-icons */,
@@ -1653,6 +1678,12 @@
 			mainGroup = CA499F5314DE33BC00FCC9FB;
 			productRefGroup = CA499F5F14DE33BC00FCC9FB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1888DE7C170F954B00ADA039 /* Products */;
+					ProjectRef = 1888DE7B170F954B00ADA039 /* kxmovie.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CA499F5D14DE33BC00FCC9FB /* iGCS */,
@@ -1660,6 +1691,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1888DE81170F954C00ADA039 /* KxMovieExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = KxMovieExample.app;
+			remoteRef = 1888DE80170F954C00ADA039 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1888DE83170F954C00ADA039 /* libkxmovie.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libkxmovie.a;
+			remoteRef = 1888DE82170F954C00ADA039 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CA499F5C14DE33BC00FCC9FB /* Resources */ = {
