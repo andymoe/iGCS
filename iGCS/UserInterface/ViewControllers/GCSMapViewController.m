@@ -13,6 +13,7 @@
 #import "GaugeViewCommon.h"
 
 #import "CommController.h"
+#import "AppDelegate.h"
 
 #import "DebugLogger.h"
 
@@ -106,6 +107,23 @@
     [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    NSLog(@"touchBegins: %@", touches);
+    [self connectToVideoStream];
+}
+
+-(void)connectToVideoStream {
+
+    NSString *path = [NSString stringWithFormat:@"file:/%@",[[NSBundle mainBundle] pathForResource:@"multicast_h264_aac_48000" ofType:@"sdp"]];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[KxMovieParameterDisableDeinterlacing] = @(YES);
+    params[KxMovieParameterMinBufferedDuration] = @(0.2f);
+    params[KxMovieParameterMaxBufferedDuration] = @(0.6f);
+    KxMovieViewController *vc = [KxMovieViewController movieViewControllerWithContentPath:path
+                                                                               parameters:params];
+    [self.parentViewController presentModalViewController:vc animated:YES];
+    
+}
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad

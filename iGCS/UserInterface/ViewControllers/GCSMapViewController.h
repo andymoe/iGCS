@@ -16,6 +16,7 @@
 #import "MavLinkPacketHandler.h"
 
 #import "GotoPointAnnotation.h"
+#import "KxMovieViewController.h"
 
 @interface GCSMapViewController : WaypointMapBaseController <MavLinkPacketHandler, GKPeerPickerControllerDelegate, GKSessionDelegate, GKMatchmakerViewControllerDelegate, GKMatchDelegate, GLKViewDelegate>
 {
